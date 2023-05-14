@@ -44,7 +44,7 @@ app.use((0, express_session_1.default)({
     resave: false,
     saveUninitialized: false,
     store: connect_mongo_1.default.create({ mongoUrl: process.env.DATABASE_URL || "mongodb://localhost:27017/test" }),
-    cookie: { maxAge: 14 * 86400000, sameSite: 'none', secure: false },
+    cookie: { maxAge: 14 * 86400000, sameSite: "strict", secure: false },
 }));
 app.use(passport_1.default.initialize());
 app.use(passport_1.default.session());

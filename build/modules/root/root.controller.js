@@ -12,7 +12,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.read = exports.index = void 0;
 const index = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     // const data = Service.getRootData()
-    res.send("upadate is code fro sessions  ");
+    res.send("upadate is code fro sessions strict  ");
 });
 exports.index = index;
 const read = (req, res) => {
