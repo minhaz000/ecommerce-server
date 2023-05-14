@@ -17,7 +17,7 @@ app.use(session({
   resave: false,
   saveUninitialized: false,
   store: MongoStore.create({ mongoUrl: process.env.DATABASE_URL || "mongodb://localhost:27017/test" }),
-  cookie: { maxAge: 14 * 86400000, sameSite:'none' , secure: false },
+  cookie: { maxAge: 14 * 86400000, sameSite:"strict" , secure: false },
 }))
 
 declare module "express-session" {
